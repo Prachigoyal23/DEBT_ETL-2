@@ -6,11 +6,11 @@ import seaborn as sns
 from sqlalchemy import create_engine
 
 # Define your database connection URL
-DATABASE_URL = 'your_database_connection_string'
+DATABASE_URL = 'https://drive.google.com/file/d/1yjpEz8FncX7qJFlyYtsLuegd_0u3_Dff/view'
 
 # Create an engine and connect to the database
 engine = create_engine(DATABASE_URL)
-query = 'SELECT * FROM your_table_name'
+query = 'SELECT * FROM 10k_borrowers'
 df = pd.read_sql(query, engine)
 
 # Set up the visualizations
